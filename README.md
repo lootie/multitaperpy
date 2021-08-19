@@ -5,7 +5,7 @@ Wraps the Multitaper.jl package so as to work in python
 
 Please install using 
 ```
-pip install -e git+https://github.com/lootie/multitaperpy.git#egg=multitaperpy
+$ pip install -e git+https://github.com/lootie/multitaperpy.git#egg=multitaperpy
 ```
 Using multitaperpy requires that Julia is installed and in the path, along with
 [Multitaper.jl](https://github.com/lootie/Multitaper.jl) and
@@ -19,4 +19,29 @@ packages required for multitaperpy, open up Python interpreter then run:
 >>> multitaperpy.install()
 ```
 
-and you're good!
+and you're good! Note that one might additionally require
+
+```
+>>> from julia.api import Julia
+>>> jl = Julia(compiled_modules=False)
+```
+
+before one accesses basic functionality, i.e.
+
+```
+from multitaperpy import multispec 
+import numpy as np
+
+multispec.multispec(numpy.random.rand(100))
+```
+
+and you may also need PyJulia
+
+```
+$ python3 -m pip install --user julia
+```
+
+# Acknowledgment
+
+This material is based upon work supported by the U.S. Department of Energy, Office
+of Science, Office of Basic Energy Sciences.
