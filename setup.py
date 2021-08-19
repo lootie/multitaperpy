@@ -23,6 +23,6 @@ setup(name='multitaperpy',
       author_email='contact@juliadiffeq.org',
       license='GNU GPL v 2.0',
       packages=['multitaperpy'],
-      install_requires=['julia>=1.4.2'],
+      install_requires=['julia>=0.2'],
       include_package_data=True,
       zip_safe=False)
