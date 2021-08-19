@@ -6,6 +6,6 @@ script_dir = os.path.dirname(os.path.realpath(__file__))
 
 def install():
     """
-    Install Julia packages required for diffeqpy.
+    Install Julia packages required for multitaperpy.
     """
     subprocess.check_call(['julia', os.path.join(script_dir, 'install.jl')])

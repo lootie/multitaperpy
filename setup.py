@@ -22,7 +22,7 @@ setup(name='multitaperpy',
       author='Charlotte Haley and Christopher Geoga',
       author_email='contact@juliadiffeq.org',
       license='GNU GPL v 2.0',
-      packages=['multitaperpy','multitaperpy.tests'],
+      packages=['multitaperpy'],
       install_requires=['julia>=1.4.2'],
       include_package_data=True,
       zip_safe=False)
