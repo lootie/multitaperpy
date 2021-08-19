@@ -1,6 +1,6 @@
 
 using Pkg
-Pkg.add("Multitaper")
+Pkg.add("https://github.com/lootie/Multitaper.jl")
 Pkg.add("PyCall")
 using Multitaper
 using PyCall
