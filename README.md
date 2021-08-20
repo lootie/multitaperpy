@@ -40,6 +40,9 @@ and you may also need PyJulia
 ```
 $ python3 -m pip install --user julia
 ```
+## Paper
+
+If you make use of multitaperpy, and thus Multitaper.jl, please cite the following paper: [![DOI](https://joss.theoj.org/papers/10.21105/joss.02463/status.svg)](https://doi.org/10.21105/joss.02463).
 
 # Acknowledgment
 
