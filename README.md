@@ -32,7 +32,7 @@ before one accesses basic functionality, i.e.
 from multitaperpy import multispec 
 import numpy as np
 
-multispec.multispec(numpy.random.rand(100))
+multispec.multispec(np.random.rand(100))
 ```
 
 and you may also need PyJulia
